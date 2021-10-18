@@ -1,0 +1,58 @@
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Open Sans', sans-serif;
+}
+.container{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    min-width: 50%;
+    min-height: 400px;
+    background:linear-gradient(to bottom,rgb(219, 225, 239),rgb(148, 159, 192));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    justify-content: space-between;
+}
+.container__header{
+    font-size: 35px;
+}
+.buttonsDiv{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 5px;
+}
+.listOfAll{
+    width: 200px;
+    height: 60px;
+    font-size: 25px;
+    background-color: inherit;
+    cursor: pointer;
+}
+
+.listOfAll:hover{
+    background:linear-gradient(to bottom,rgb(148, 159, 192),rgb(219, 225, 239));
+}
+
+.activeTaskList{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.activeTaskList li{
+    font-size: 20px;
+}
